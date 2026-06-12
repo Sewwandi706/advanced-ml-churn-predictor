@@ -52,7 +52,7 @@ if st.button("🔮 Run Risk Analysis", use_container_width=True):
     # Display Results Dashboard
     st.subheader("📈 Risk Assessment Analysis")
     
-    if churn_probability > 70:
+    if churn_probability > 50:
         st.error(f"⚠️ High Churn Risk: {churn_probability}%")
         st.markdown("**Management Action Item:** This customer is highly likely to cancel. Recommend immediate outreach offering a loyalty discount or contract upgrade incentives.")
     elif 30 <= churn_probability <= 70:
